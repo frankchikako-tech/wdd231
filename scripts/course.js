@@ -16,6 +16,18 @@ const courses = [
         number: 110,
         credits: 2,
         completed: false
+    },
+    {
+        subject: "CSE",
+        number: 111,
+        credits: 2,
+        completed: false
+    },
+    {
+        subject: "CSE",
+        number: 230,
+        credits: 2,
+        completed: false
     }
 ];
 
