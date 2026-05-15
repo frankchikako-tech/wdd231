@@ -1,21 +1,36 @@
 @media screen and (min-width: 768px) {
-
+    /* Hide the mobile menu toggle button on desktop views */
     #menu {
         display: none;
     }
 
+    /* Convert vertical menu items into a horizontal navigation bar */
     .navigation {
         display: flex;
-        gap: 1rem;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #0A3D62;
     }
 
+    /* Rearrange main elements into a two-column layout */
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        gap: 1.5rem;
+        max-width: 1000px;
+        margin: 0 auto;
     }
 
-    main section:last-child {
+    /* Target the course section to span across both grid columns */
+    .courses-section {
         grid-column: span 2;
+    }
+
+    /* Layout dynamic courses in fluid cards instead of full-width rows */
+    #courses {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
     }
 }

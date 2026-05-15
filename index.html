@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>WDD231 | Home</title>
-
-    <meta name="description"
-        content="WDD231 course home page showcasing web development projects, coursework, and responsive design assignments by Frank Chika.">
+    <meta name="description" content="WDD231 course home page showcasing web development projects by Frank Chika.">
     <meta name="author" content="Ukeje Frank Chika">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +19,6 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
 </head>
-
 <body>
 
     <header>
@@ -31,7 +26,7 @@
             <img src="images/logo.svg" alt="Site Logo">
             <span>Ukeje Frank Chika</span>
         </div>
-        <button id="menu"></button>
+        <button id="menu" aria-label="Toggle main navigation menu"></button>
     </header>
 
     <nav>
@@ -43,7 +38,7 @@
     </nav>
 
     <main>
-        <h1>Home</h1>
+        <h1>WDD231 Course Home Page</h1>
 
         <section>
             <h2>About Me</h2>
@@ -54,15 +49,14 @@
                 and I am passionate about creating modern and user-friendly applications.
             </p>
         </section>
-        <section>
-            <h2>Student Photo</h2>
 
-            <img src="images/profile.webp" alt="Student photo">
+        <section class="profile-card">
+            <h2>Student Photo</h2>
+            <img src="images/profile.webp" alt="Photo of Ukeje Frank Chika" class="profile-photo" width="200" height="250" loading="lazy">
         </section>
 
-        <section>
+        <section class="courses-section">
             <h2>Web Certificate Courses</h2>
-
             <div class="filters">
                 <button id="all">All</button>
                 <button id="wdd">WDD</button>
@@ -71,28 +65,18 @@
 
             <div id="courses"></div>
 
-            <p>Total Credits: <span id="credits"></span></p>
+            <p class="credits-display">The total credits for course listed above is <span id="credits"></span></p>
         </section>
-
     </main>
 
     <footer>
         <div class="socials">
-            <a href="https://github.com/frankchikako-tech">GitHub</a>
-
-            <a href="https://www.linkedin.com/in/frank-chika-ukeje-496614366/">
-                LinkedIn
-            </a>
+            <a href="https://github.com/frankchikako-tech" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/frank-chika-ukeje-496614366/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
-
-        <p>
-            &copy; <span id="year"></span>
-            Ukeje Frank Chika | Nigeria
-        </p>
-
+        <p>&copy; <span id="year"></span> | Ukeje Frank Chika | Nigeria</p>
         <p id="lastModified"></p>
     </footer>
 
 </body>
-
 </html>

@@ -2,61 +2,106 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-header,
-nav,
-main,
-footer {
+header, nav, main, footer {
     padding: 1rem;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+/* Header & Logo styling */
+header {
+    background-color: #0A3D62;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Responsive Navigation Mechanics */
 .navigation {
     display: none;
     list-style: none;
     padding: 0;
+    background-color: #1b2a4a;
 }
 
 .navigation.open {
     display: block;
 }
 
-#menu::before {
-    content: "☰";
-}
-
-#menu.open::before {
-    content: "✖";
-}
-
-.filters button {
-    margin: .5rem;
-}
-
-.course-card {
-    background: #ddd;
-    padding: 1rem;
-    margin: .5rem 0;
+.navigation li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
     text-align: center;
 }
 
-.completed {
-    background: #0A3D62;
+#menu {
+    background: none;
+    border: none;
     color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
 }
 
-.active {
-    background: #0A3D62;
-    color: white;
-    padding: .5rem;
+#menu::before { content: "☰"; }
+#menu.open::before { content: "✖"; }
+
+/* Image scaling baseline */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
-.about-me {
-    max-width: 500px;
-    line-height: 1.6;
+/* Course Blocks Design */
+.course-card {
+    background: #ddd;
+    color: #222;
+    padding: 1.2rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.course-card.completed {
+    background: #0A3D62;
+    color: white;
+    border: 1px solid #05233a;
+}
+
+/* Wayfinding & Filter Active State Highlights */
+button.active, a.active {
+    background: #0A3D62;
+    color: white;
+    border: 1px solid #05233a;
+}
+
+.filters button {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.credits-display {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
 }
