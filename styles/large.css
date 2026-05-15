@@ -1,36 +1,52 @@
 @media screen and (min-width: 768px) {
-    /* Hide the mobile menu toggle button on desktop views */
+    /* Hide responsive dropdown buttons on wide displays */
     #menu {
         display: none;
     }
 
-    /* Convert vertical menu items into a horizontal navigation bar */
+    /* Convert link stack into horizontal wireframe navbar */
     .navigation {
         display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-        background-color: #0A3D62;
+        justify-content: flex-start;
     }
 
-    /* Rearrange main elements into a two-column layout */
+    .navigation li a {
+        padding: 0.75rem 1.5rem;
+        border-bottom: none;
+    }
+
+    /* Turn page into multi-column blueprint grid mapping */
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr; /* About me box takes wider space */
         gap: 1.5rem;
-        max-width: 1000px;
-        margin: 0 auto;
     }
 
-    /* Target the course section to span across both grid columns */
-    .courses-section {
+    .page-title {
+        grid-column: span 2;
+        margin-top: 1rem;
+    }
+
+    /* Set lower course directory card row to occupy full width across base */
+    main .card-section:last-child {
         grid-column: span 2;
     }
 
-    /* Layout dynamic courses in fluid cards instead of full-width rows */
+    /* Horizontal filter spacing configurations */
+    .filters {
+        gap: 1.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    /* Break vertical items block list into a solid three-column grid layout matrix */
     #courses {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(3, 1fr); /* 3 balanced rows matching wireframe layout */
         gap: 1rem;
-        margin-top: 1rem;
+    }
+
+    .course-card {
+        margin-bottom: 0; /* Clear block margins to yield tracking control to grid */
+        padding: 1rem;
     }
 }
