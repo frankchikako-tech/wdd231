@@ -4,7 +4,7 @@
         "address": "12 Marina Road, Lagos",
         "phone": "+234 801 111 2222",
         "website": "https://technova.com",
-        "image": "business1.webp",
+        "image": "Nova.png",
         "membership": "Gold",
         "description": "Software and technology consulting company."
     },
@@ -14,7 +14,7 @@
         "address": "22 Lekki Phase 1, Lagos",
         "phone": "+234 802 333 4444",
         "website": "https://greenfarm.com",
-        "image": "business2.webp",
+        "image": "green.jpg",
         "membership": "Silver",
         "description": "Organic food and agricultural services provider."
     },
@@ -24,7 +24,7 @@
         "address": "5 Victoria Island, Lagos",
         "phone": "+234 803 555 6666",
         "website": "https://skylinebank.com",
-        "image": "business3.webp",
+        "image": "sky.webp",
         "membership": "Gold",
         "description": "Commercial banking and financial solutions."
     },
@@ -34,7 +34,7 @@
         "address": "15 Ikeja GRA, Lagos",
         "phone": "+234 804 777 8888",
         "website": "https://lagosrealty.com",
-        "image": "business4.webp",
+        "image": "realty.webp",
         "membership": "Member",
         "description": "Real estate and property management services."
     },
@@ -44,7 +44,7 @@
         "address": "7 Apapa Wharf, Lagos",
         "phone": "+234 805 999 0000",
         "website": "https://brightlogistics.com",
-        "image": "business5.webp",
+        "image": "bright.png",
         "membership": "Silver",
         "description": "Shipping and logistics solutions provider."
     },
@@ -54,7 +54,7 @@
         "address": "18 Yaba Market Road, Lagos",
         "phone": "+234 806 123 4567",
         "website": "https://primefashion.com",
-        "image": "business6.webp",
+        "image": "fashion.jpg",
         "membership": "Member",
         "description": "Fashion and lifestyle retail company."
     },
@@ -64,7 +64,7 @@
         "address": "30 Surulere Avenue, Lagos",
         "phone": "+234 807 765 4321",
         "website": "https://smartenergy.com",
-        "image": "business7.webp",
+        "image": "energy.jpg",
         "membership": "Gold",
         "description": "Renewable energy and solar power company."
     }
