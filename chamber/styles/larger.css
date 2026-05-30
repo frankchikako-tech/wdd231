@@ -17,3 +17,74 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+@media only screen and (min-width: 640px) {
+    .navigation {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Target home page split dashboard views */
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-container {
+        grid-column: 1 / -1;
+    }
+
+    .hero-cta {
+        max-width: 400px;
+        left: 2rem;
+        right: auto;
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: left;
+    }
+
+    .spotlights-section {
+        grid-column: 1 / -1;
+    }
+
+    #spotlight-container {
+        flex-direction: row;
+    }
+    
+    .spotlight-card {
+        flex: 1;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* 3-Column Premium Complex Dashboard Grid Layout */
+    .home-grid {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .hero-container {
+        grid-column: 1 / -1;
+    }
+
+    .events-panel {
+        grid-column: 1 / 2;
+    }
+
+    .weather-panel {
+        grid-column: 2 / 3;
+    }
+
+    .spotlights-section {
+        grid-column: 1 / -1;
+    }
+}

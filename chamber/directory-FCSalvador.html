@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lagos Chamber Directory</title>
+
+    <meta name="description" content="Lagos Chamber of Commerce business directory page.">
+
+    <meta name="author" content="Ukeje Frank Chika">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Lagos Chamber Directory">
+    <meta property="og:description" content="Explore businesses in the Lagos Chamber of Commerce.">
+    <meta property="og:image" content="https://frankchikako-tech.github.io/wdd231/chamber/images/chamber-og.webp">
+    <meta property="og:url" content="https://frankchikako-tech.github.io/wdd231/chamber/directory.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <p class="site-name">Lagos Chamber of Commerce</p>
+            <p>Connecting Businesses Across Lagos</p>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Lagos Chamber Directory</h1>
+        <section class="hero">
+            <h2>Business Directory</h2>
+            <p>Explore trusted businesses and organizations in Lagos.</p>
+        </section>
+
+        <div class="menu">
+            <button id="grid">Grid View</button>
+            <button id="list">List View</button>
+        </div>
+
+        <section id="members" class="grid"></section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-info">
+            <h3>Lagos Chamber of Commerce</h3>
+            <p>10 Broad Street, Lagos, Nigeria</p>
+            <p>Email: info@lagoschamber.org</p>
+            <p>Phone: +234 800 000 0000</p>
+        </div>
+
+        <div class="footer-dev">
+            <p>
+                © <span id="year"></span> Frank Chika | WDD 231
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
