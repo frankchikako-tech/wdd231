@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review: Lagos Chamber | Join Us</title>
+    <title>Lagos Chamber | Join Us</title>
     <meta name="description" content="Apply for membership with the Lagos Chamber of Commerce. Choose from our tiered plans.">
     <meta name="author" content="Ukeje Frank Chika">
     <link rel="icon" href="images/favicon.ico">
@@ -26,9 +26,9 @@
 </head>
 <body>
 
-    <header style="position: relative;">
+    <header>
         <div class="logo">
-            <h1 class="site-name">Lagos Chamber of Commerce</h1>
+            <p class="site-name">Lagos Chamber of Commerce</p>
             <p>Connecting Businesses Across Lagos</p>
         </div>
         
@@ -45,7 +45,7 @@
     </header>
 
     <main>
-        <h1>Chamber Membership Application</h1>
+        <h1>Lagos Chamber | Join Us</h1>
 
         <div class="membership-container">
             <section class="form-wrapper-card">
@@ -53,31 +53,31 @@
                 <form method="get" action="thankyou.html" class="membership-form">
                     
                     <label>First Name:
-                        <input type="text" name="firstname" required autocomplete="given-name">
+                        <input type="text" name="firstname" required autocomplete="given-name" title="Please enter your first name.">
                     </label>
 
                     <label>Last Name:
-                        <input type="text" name="lastname" required autocomplete="family-name">
+                        <input type="text" name="lastname" required autocomplete="family-name" title="Please enter your last name.">
                     </label>
 
                     <label>Your Title / Position:
-                        <input type="text" name="title" required autocomplete="organization-title" pattern="[A-Za-z\s\-]{2,}">
+                        <input type="text" name="title" required autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Please enter your professional position title using at least 7 letters, spaces, or hyphens.">
                     </label>
 
                     <label>Email Address:
-                        <input type="email" name="email" placeholder="example@domain.com" required autocomplete="email">
+                        <input type="email" name="email" placeholder="example@domain.com" required autocomplete="email" title="Please provide a valid corporate or individual email address.">
                     </label>
 
                     <label>Mobile Phone Number:
-                        <input type="tel" name="phone" required autocomplete="tel">
+                        <input type="tel" name="phone" required autocomplete="tel" title="Please provide your contact mobile phone number.">
                     </label>
 
                     <label>Organization Name:
-                        <input type="text" name="organization" required autocomplete="organization">
+                        <input type="text" name="organization" required autocomplete="organization" title="Please enter your officially registered business or organization name.">
                     </label>
 
                     <label>Select Membership Tier:
-                        <select name="membership-level" required>
+                        <select name="membership-level" required title="Please select a corporate subscription level strategy package.">
                             <option value="" disabled selected>-- Select Your Strategy Option Level --</option>
                             <option value="np">Non-Profit Tier Plan</option>
                             <option value="bronze">Bronze Level Support Pack</option>
@@ -87,7 +87,7 @@
                     </label>
 
                     <label>Business Description:
-                        <textarea name="description" rows="4" placeholder="Briefly write summary insights regarding your firm operation..."></textarea>
+                        <textarea name="description" rows="4" placeholder="Briefly write summary insights regarding your firm operations..." title="Please share a concise descriptive overview detailing your organizational activities."></textarea>
                     </label>
 
                     <input type="hidden" id="form-timestamp" name="entry-timestamp" value="">
@@ -189,7 +189,7 @@
             <p>Phone: +234 800 000 0000</p>
         </div>
         <div class="footer-dev">
-            <p>© <span id=\"year\"></span> Ukeje Frank Chika | WDD 231</p>
+            <p>© <span id="year"></span> Ukeje Frank Chika | WDD 231</p>
             <p id="lastModified"></p>
         </div>
     </footer>
