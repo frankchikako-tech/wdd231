@@ -8,6 +8,12 @@
     <meta name="author" content="Ukeje Frank Chika">
     <link rel="icon" href="images/favicon.ico">
 
+    <meta property="og:title" content="Lagos Chamber of Commerce | Join Us">
+    <meta property="og:description" content="Apply for membership with the Lagos Chamber of Commerce. Choose from our tiered plans.">
+    <meta property="og:image" content="https://frankchikako-tech.github.io/wdd231/chamber/images/chamber-og.webp">
+    <meta property="og:url" content="https://frankchikako-tech.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -42,60 +48,59 @@
         
         <div class="join-layout-wrapper">
             <form method="get" action="thankyou.html" class="membership-form">
-                
-                <label title="First Name">
-                    First Name*
-                    <input type="text" name="firstname" autocomplete="given-name" required>
-                </label>
+    
+    <label>
+        First Name*
+        <input type="text" name="firstname" autocomplete="given-name" title="Please enter your first name" required>
+    </label>
 
-                <label title="Last Name">
-                    Last Name*
-                    <input type="text" name="lastname" autocomplete="family-name" required>
-                </label>
+    <label>
+        Last Name*
+        <input type="text" name="lastname" autocomplete="family-name" title="Please enter your last name" required>
+    </label>
 
-                <label title="Organizational Title">
-                    Organizational Title
-                    <input type="text" name="org-title" autocomplete="organization-title" 
-                           pattern="^[A-Za-z\s\-]{7,}$" 
-                           title="Minimum 7 characters. Only letters, spaces, and hyphens allowed.">
-                </label>
+    <label>
+        Organizational Title
+        <input type="text" name="org-title" autocomplete="organization-title" 
+               pattern="^[A-Za-z\s\-]{7,}$" 
+               title="Minimum 7 characters. Only letters, spaces, and hyphens allowed.">
+    </label>
 
-                <label title="Email Address">
-                    Email Address*
-                    <input type="email" name="email" autocomplete="email" placeholder="example@domain.com" required>
-                </label>
+    <label>
+        Email Address*
+        <input type="email" name="email" autocomplete="email" placeholder="example@domain.com" title="Please enter a valid email address" required>
+    </label>
 
-                <label title="Mobile Phone Number">
-                    Mobile Phone Number*
-                    <input type="tel" name="phone" autocomplete="tel" required>
-                </label>
+    <label>
+        Mobile Phone Number*
+        <input type="tel" name="phone" autocomplete="tel" title="Please enter your contact phone number" required>
+    </label>
 
-                <label title="Business or Organization Name">
-                    Business / Organization Name*
-                    <input type="text" name="organization" autocomplete="organization" required>
-                </label>
+    <label>
+        Business or Organization Name*
+        <input type="text" name="organization" autocomplete="organization" title="Please enter your business or organization name" required>
+    </label>
 
-                <label title="Membership Level Selection">
-                    Membership Level*
-                    <select name="membership-level" required>
-                        <option value="" disabled selected>Select your tier...</option>
-                        <option value="np">NP Membership (Non-Profit - No Fee)</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                    </select>
-                </label>
+    <label>
+        Membership Level*
+        <select name="membership-level" title="Please select a membership level tier" required>
+            <option value="" disabled selected>Select your tier...</option>
+            <option value="np">NP Membership (Non-Profit - No Fee)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+        </select>
+    </label>
 
-                <label title="Business Description">
-                    Business/Organization Description
-                    <textarea name="description" rows="4"></textarea>
-                </label>
+    <label>
+        Business/Organization Description
+        <textarea name="description" rows="4" title="Please provide a short description of your organization"></textarea>
+    </label>
 
-                <input type="hidden" name="entry-timestamp" id="form-timestamp">
+    <input type="hidden" name="entry-timestamp" id="form-timestamp">
 
-                <input type="submit" value="Submit Application" class="submit-btn">
-            </form>
-
+    <button type="submit" class="submit-btn">Submit Application</button>
+</form>
             <section class="membership-cards-container">
                 <h2>Membership Tiers</h2>
                 
