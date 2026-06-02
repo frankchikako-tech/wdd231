@@ -1,28 +1,15 @@
+/* Tablet and Small Desktop Overrides */
 @media only screen and (min-width: 640px) {
 
     .navigation {
         display: flex;
         justify-content: center;
         gap: 2rem;
+        margin-top: 0; /* Clear desktop top margin spacing */
     }
-
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media only screen and (min-width: 640px) {
-    .navigation {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
+    
+    .navigation li {
+        margin: 0; /* Reset mobile vertical block margins */
     }
 
     .grid {
@@ -56,35 +43,12 @@
     #spotlight-container {
         flex-direction: row;
     }
-    
-    .spotlight-card {
-        flex: 1;
-    }
 }
 
+/* Large Desktop Overrides */
 @media only screen and (min-width: 1024px) {
+
     .grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    /* 3-Column Premium Complex Dashboard Grid Layout */
-    .home-grid {
-        grid-template-columns: 1.5fr 1fr;
-    }
-
-    .hero-container {
-        grid-column: 1 / -1;
-    }
-
-    .events-panel {
-        grid-column: 1 / 2;
-    }
-
-    .weather-panel {
-        grid-column: 2 / 3;
-    }
-
-    .spotlights-section {
-        grid-column: 1 / -1;
     }
 }
