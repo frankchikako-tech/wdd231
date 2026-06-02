@@ -246,3 +246,35 @@ footer {
     flex-direction: column;
     gap: 1rem;
 }
+
+/* Mobile Navigation Drawer System Updates */
+#menu-toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Hide navigation by default on mobile */
+.navigation {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    width: 100%;
+}
+
+/* Display stack alignment layout when the javascript class is toggled active */
+.navigation.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 48, 73, 0.95);
+    padding: 1rem 0;
+    border-radius: 8px;
+}

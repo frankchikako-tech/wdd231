@@ -52,3 +52,23 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+@media only screen and (min-width: 640px) {
+    /* Hide the mobile hamburger button toggle completely on wide viewports */
+    #menu-toggle {
+        display: none !important;
+    }
+
+    /* Force the navigation to always remain visible and horizontally oriented */
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 0;
+    }
+    
+    .navigation li {
+        margin: 0;
+    }
+}

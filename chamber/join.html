@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lagos Chamber | Join Us</title>
+    <title>Review: Lagos Chamber | Join Us</title>
     <meta name="description" content="Apply for membership with the Lagos Chamber of Commerce. Choose from our tiered plans.">
     <meta name="author" content="Ukeje Frank Chika">
     <link rel="icon" href="images/favicon.ico">
@@ -12,7 +12,6 @@
     <meta property="og:description" content="Apply for membership with the Lagos Chamber of Commerce. Choose from our tiered plans.">
     <meta property="og:image" content="https://frankchikako-tech.github.io/wdd231/chamber/images/chamber-og.webp">
     <meta property="og:url" content="https://frankchikako-tech.github.io/wdd231/chamber/join.html">
-    <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +26,14 @@
 </head>
 <body>
 
-    <header>
+    <header style="position: relative;">
         <div class="logo">
-            <p class="site-name">Lagos Chamber of Commerce</p>
+            <h1 class="site-name">Lagos Chamber of Commerce</h1>
             <p>Connecting Businesses Across Lagos</p>
         </div>
+        
         <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        
         <nav>
             <ul class="navigation" id="nav-menu">
                 <li><a href="index.html">Home</a></li>
@@ -43,85 +44,86 @@
         </nav>
     </header>
 
-    <main class="join-main-grid">
+    <main>
         <h1>Chamber Membership Application</h1>
-        
-        <div class="join-layout-wrapper">
-            <form method="get" action="thankyou.html" class="membership-form">
-    
-    <label>
-        First Name*
-        <input type="text" name="firstname" autocomplete="given-name" title="Please enter your first name" required>
-    </label>
 
-    <label>
-        Last Name*
-        <input type="text" name="lastname" autocomplete="family-name" title="Please enter your last name" required>
-    </label>
+        <div class="membership-container">
+            <section class="form-wrapper-card">
+                <h2>Applicant Information Intake</h2>
+                <form method="get" action="thankyou.html" class="membership-form">
+                    
+                    <label>First Name:
+                        <input type="text" name="firstname" required autocomplete="given-name">
+                    </label>
 
-    <label>
-        Organizational Title
-        <input type="text" name="org-title" autocomplete="organization-title" 
-               pattern="^[A-Za-z\s\-]{7,}$" 
-               title="Minimum 7 characters. Only letters, spaces, and hyphens allowed.">
-    </label>
+                    <label>Last Name:
+                        <input type="text" name="lastname" required autocomplete="family-name">
+                    </label>
 
-    <label>
-        Email Address*
-        <input type="email" name="email" autocomplete="email" placeholder="example@domain.com" title="Please enter a valid email address" required>
-    </label>
+                    <label>Your Title / Position:
+                        <input type="text" name="title" required autocomplete="organization-title" pattern="[A-Za-z\s\-]{2,}">
+                    </label>
 
-    <label>
-        Mobile Phone Number*
-        <input type="tel" name="phone" autocomplete="tel" title="Please enter your contact phone number" required>
-    </label>
+                    <label>Email Address:
+                        <input type="email" name="email" placeholder="example@domain.com" required autocomplete="email">
+                    </label>
 
-    <label>
-        Business or Organization Name*
-        <input type="text" name="organization" autocomplete="organization" title="Please enter your business or organization name" required>
-    </label>
+                    <label>Mobile Phone Number:
+                        <input type="tel" name="phone" required autocomplete="tel">
+                    </label>
 
-    <label>
-        Membership Level*
-        <select name="membership-level" title="Please select a membership level tier" required>
-            <option value="" disabled selected>Select your tier...</option>
-            <option value="np">NP Membership (Non-Profit - No Fee)</option>
-            <option value="bronze">Bronze Membership</option>
-            <option value="silver">Silver Membership</option>
-            <option value="gold">Gold Membership</option>
-        </select>
-    </label>
+                    <label>Organization Name:
+                        <input type="text" name="organization" required autocomplete="organization">
+                    </label>
 
-    <label>
-        Business/Organization Description
-        <textarea name="description" rows="4" title="Please provide a short description of your organization"></textarea>
-    </label>
+                    <label>Select Membership Tier:
+                        <select name="membership-level" required>
+                            <option value="" disabled selected>-- Select Your Strategy Option Level --</option>
+                            <option value="np">Non-Profit Tier Plan</option>
+                            <option value="bronze">Bronze Level Support Pack</option>
+                            <option value="silver">Silver Level Regional Partner Pack</option>
+                            <option value="gold">Gold Elite Executive Tier</option>
+                        </select>
+                    </label>
 
-    <input type="hidden" name="entry-timestamp" id="form-timestamp">
+                    <label>Business Description:
+                        <textarea name="description" rows="4" placeholder="Briefly write summary insights regarding your firm operation..."></textarea>
+                    </label>
 
-    <button type="submit" class="submit-btn">Submit Application</button>
-</form>
-            <section class="membership-cards-container">
-                <h2>Membership Tiers</h2>
-                
-                <div class="membership-card-tier" id="card-np">
-                    <h3>NP Membership</h3>
-                    <button type="button" class="modal-trigger-btn" data-target="modal-np">Explore Benefits</button>
-                </div>
+                    <input type="hidden" id="form-timestamp" name="entry-timestamp" value="">
 
-                <div class="membership-card-tier" id="card-bronze">
-                    <h3>Bronze Membership</h3>
-                    <button type="button" class="modal-trigger-btn" data-target="modal-bronze">Explore Benefits</button>
-                </div>
+                    <button type="submit" class="submit-btn">Submit Application System Data</button>
+                </form>
+            </section>
 
-                <div class="membership-card-tier" id="card-silver">
-                    <h3>Silver Membership</h3>
-                    <button type="button" class="modal-trigger-btn" data-target="modal-silver">Explore Benefits</button>
-                </div>
+            <section class="benefits-wrapper-panel">
+                <h2>Available Corporate Partnership Tiers</h2>
+                <div class="membership-cards-container">
+                    
+                    <div class="membership-card-tier" id="card-np">
+                        <h3>Non-Profit Strategy Pack</h3>
+                        <p>Tailored configuration access models built for humanitarian, educational, or generic NGO systems.</p>
+                        <button type="button" class="modal-trigger-btn" data-target="modal-np">Explore Tier Details</button>
+                    </div>
 
-                <div class="membership-card-tier" id="card-gold">
-                    <h3>Gold Membership</h3>
-                    <button type="button" class="modal-trigger-btn" data-target="modal-gold">Explore Benefits</button>
+                    <div class="membership-card-tier" id="card-bronze">
+                        <h3>Bronze Support Level</h3>
+                        <p>Essential entry operational integration packs designed for emerging startup networks across Nigeria.</p>
+                        <button type="button" class="modal-trigger-btn" data-target="modal-bronze">Explore Tier Details</button>
+                    </div>
+
+                    <div class="membership-card-tier" id="card-silver">
+                        <h3>Silver Regional Level</h3>
+                        <p>Expanded brand visibility profiles with included monthly advertising and priority listing structures.</p>
+                        <button type="button" class="modal-trigger-btn" data-target="modal-silver">Explore Tier Details</button>
+                    </div>
+
+                    <div class="membership-card-tier" id="card-gold">
+                        <h3>Gold Elite Executive Level</h3>
+                        <p>Premium programmatic enterprise exposure with VIP summit invitations and custom advisory consulting pipelines.</p>
+                        <button type="button" class="modal-trigger-btn" data-target="modal-gold">Explore Tier Details</button>
+                    </div>
+
                 </div>
             </section>
         </div>
@@ -129,11 +131,12 @@
 
     <dialog id="modal-np" class="benefit-modal">
         <div class="modal-inner">
-            <h3>NP Tier Benefits</h3>
-            <p class="cost-tag">Cost: ₦0 / Year (Registered Non-Profits)</p>
+            <h3>Non-Profit Access Details</h3>
+            <p class="cost-tag">Cost: Complimentary / Waived upon validation</p>
             <ul>
-                <li>Basic search listing inside the public directory</li>
-                <li>Access to regular chamber networking meetups</li>
+                <li>Standard visibility profiles inside our active business directory matrix</li>
+                <li>General attendance permissions for local networking summits</li>
+                <li>Eligibility options for specialized civic grant reference requests</li>
             </ul>
             <button type="button" class="modal-close-btn">Close Panel</button>
         </div>
@@ -142,11 +145,11 @@
     <dialog id="modal-bronze" class="benefit-modal">
         <div class="modal-inner">
             <h3>Bronze Tier Benefits</h3>
-            <p class="cost-tag">Cost: Affordable entry tier for emerging businesses</p>
+            <p class="cost-tag">Cost: Base Nominal Operational Monthly Subscription</p>
             <ul>
-                <li>Standard directory visibility</li>
-                <li>Chamber Training Seminar access passes</li>
-                <li>Discounted access vouchers for business mixers</li>
+                <li>Standard corporate profile indexing inside public directory search frameworks</li>
+                <li>Discounts for premium booths at regional commerce trade conventions</li>
+                <li>Access to shared networking forum threads</li>
             </ul>
             <button type="button" class="modal-close-btn">Close Panel</button>
         </div>
@@ -155,7 +158,7 @@
     <dialog id="modal-silver" class="benefit-modal">
         <div class="modal-inner">
             <h3>Silver Tier Benefits</h3>
-            <p class="cost-tag">Cost: Mid-tier optimizing brand visibility</p>
+            <p class="cost-tag">Cost: Mid-Level Corporate Investment Plan</p>
             <ul>
                 <li>Priority sorting placements in the public directory</li>
                 <li>1 Static Feature Spotlight Banner slot on the Home page yearly</li>
@@ -186,7 +189,7 @@
             <p>Phone: +234 800 000 0000</p>
         </div>
         <div class="footer-dev">
-            <p>© <span id="year"></span> Frank Chika | WDD 231</p>
+            <p>© <span id=\"year\"></span> Ukeje Frank Chika | WDD 231</p>
             <p id="lastModified"></p>
         </div>
     </footer>
