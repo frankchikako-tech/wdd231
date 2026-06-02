@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagos Chamber | Join Us</title>
+    <meta name="description" content="Apply for membership with the Lagos Chamber of Commerce. Choose from our tiered plans.">
+    <meta name="author" content="Ukeje Frank Chika">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <p class="site-name">Lagos Chamber of Commerce</p>
+            <p>Connecting Businesses Across Lagos</p>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        <nav>
+            <ul class="navigation" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main-grid">
+        <h1>Chamber Membership Application</h1>
+        
+        <div class="join-layout-wrapper">
+            <form method="get" action="thankyou.html" class="membership-form">
+                
+                <label title="First Name">
+                    First Name*
+                    <input type="text" name="firstname" autocomplete="given-name" required>
+                </label>
+
+                <label title="Last Name">
+                    Last Name*
+                    <input type="text" name="lastname" autocomplete="family-name" required>
+                </label>
+
+                <label title="Organizational Title">
+                    Organizational Title
+                    <input type="text" name="org-title" autocomplete="organization-title" 
+                           pattern="^[A-Za-z\s\-]{7,}$" 
+                           title="Minimum 7 characters. Only letters, spaces, and hyphens allowed.">
+                </label>
+
+                <label title="Email Address">
+                    Email Address*
+                    <input type="email" name="email" autocomplete="email" placeholder="example@domain.com" required>
+                </label>
+
+                <label title="Mobile Phone Number">
+                    Mobile Phone Number*
+                    <input type="tel" name="phone" autocomplete="tel" required>
+                </label>
+
+                <label title="Business or Organization Name">
+                    Business / Organization Name*
+                    <input type="text" name="organization" autocomplete="organization" required>
+                </label>
+
+                <label title="Membership Level Selection">
+                    Membership Level*
+                    <select name="membership-level" required>
+                        <option value="" disabled selected>Select your tier...</option>
+                        <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label title="Business Description">
+                    Business/Organization Description
+                    <textarea name="description" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" name="entry-timestamp" id="form-timestamp">
+
+                <input type="submit" value="Submit Application" class="submit-btn">
+            </form>
+
+            <section class="membership-cards-container">
+                <h2>Membership Tiers</h2>
+                
+                <div class="membership-card-tier" id="card-np">
+                    <h3>NP Membership</h3>
+                    <button type="button" class="modal-trigger-btn" data-target="modal-np">Explore Benefits</button>
+                </div>
+
+                <div class="membership-card-tier" id="card-bronze">
+                    <h3>Bronze Membership</h3>
+                    <button type="button" class="modal-trigger-btn" data-target="modal-bronze">Explore Benefits</button>
+                </div>
+
+                <div class="membership-card-tier" id="card-silver">
+                    <h3>Silver Membership</h3>
+                    <button type="button" class="modal-trigger-btn" data-target="modal-silver">Explore Benefits</button>
+                </div>
+
+                <div class="membership-card-tier" id="card-gold">
+                    <h3>Gold Membership</h3>
+                    <button type="button" class="modal-trigger-btn" data-target="modal-gold">Explore Benefits</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <dialog id="modal-np" class="benefit-modal">
+        <div class="modal-inner">
+            <h3>NP Tier Benefits</h3>
+            <p class="cost-tag">Cost: ₦0 / Year (Registered Non-Profits)</p>
+            <ul>
+                <li>Basic search listing inside the public directory</li>
+                <li>Access to regular chamber networking meetups</li>
+            </ul>
+            <button type="button" class="modal-close-btn">Close Panel</button>
+        </div>
+    </dialog>
+
+    <dialog id="modal-bronze" class="benefit-modal">
+        <div class="modal-inner">
+            <h3>Bronze Tier Benefits</h3>
+            <p class="cost-tag">Cost: Affordable entry tier for emerging businesses</p>
+            <ul>
+                <li>Standard directory visibility</li>
+                <li>Chamber Training Seminar access passes</li>
+                <li>Discounted access vouchers for business mixers</li>
+            </ul>
+            <button type="button" class="modal-close-btn">Close Panel</button>
+        </div>
+    </dialog>
+
+    <dialog id="modal-silver" class="benefit-modal">
+        <div class="modal-inner">
+            <h3>Silver Tier Benefits</h3>
+            <p class="cost-tag">Cost: Mid-tier optimizing brand visibility</p>
+            <ul>
+                <li>Priority sorting placements in the public directory</li>
+                <li>1 Static Feature Spotlight Banner slot on the Home page yearly</li>
+                <li>2 complimentary professional consultation session tickets</li>
+            </ul>
+            <button type="button" class="modal-close-btn">Close Panel</button>
+        </div>
+    </dialog>
+
+    <dialog id="modal-gold" class="benefit-modal">
+        <div class="modal-inner">
+            <h3>Gold Tier Benefits</h3>
+            <p class="cost-tag">Cost: Complete premium visibility pack</p>
+            <ul>
+                <li>Pinned top-tier exposure settings across entire directory platforms</li>
+                <li>High-weight algorithm priority configuration for random homepage spotlights</li>
+                <li>Full all-access credentials to specialized VIP workshops and business summits</li>
+            </ul>
+            <button type="button" class="modal-close-btn">Close Panel</button>
+        </div>
+    </dialog>
+
+    <footer>
+        <div class="footer-info">
+            <h3>Lagos Chamber of Commerce</h3>
+            <p>10 Broad Street, Lagos, Nigeria</p>
+            <p>Email: info@lagoschamber.org</p>
+            <p>Phone: +234 800 000 0000</p>
+        </div>
+        <div class="footer-dev">
+            <p>© <span id="year"></span> Frank Chika | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+</html>
