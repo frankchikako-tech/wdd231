@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagos Chamber | Discover</title>
+    <meta name="description" content="Explore regional attractions, landmarks, and demographic features across Lagos with the Lagos Chamber of Commerce.">
+    <meta name="author" content="Ukeje Frank Chika">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Lagos Chamber of Commerce | Discover Lagos">
+    <meta property="og:description" content="Explore regional attractions, landmarks, and strategic operational features across Lagos.">
+    <meta property="og:image" content="https://frankchikako-tech.github.io/wdd231/chamber/images/chamber-og.webp">
+    <meta property="og:url" content="https://frankchikako-tech.github.io/wdd231/chamber/discover.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <p class="site-name">Lagos Chamber of Commerce</p>
+            <p>Connecting Businesses Across Lagos</p>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        <nav>
+            <ul class="navigation" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Discover Lagos</h1>
+        
+        <div id="visitor-message-banner" class="visitor-alert-box"></div>
+
+        <section class="discover-intro">
+            <h2>Regional Insights & Landmarks</h2>
+            <p>Lagos is Africa's foremost economic hub—a fast-growing metropolis driven by a massive consumer market and cultural expression. Explore these strategic landmarks that define our vibrant ecosystem.</p>
+        </section>
+
+        <section id="discover-grid-container" class="discover-layout-matrix">
+            </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h3>Lagos Chamber of Commerce</h3>
+            <p>10 Broad Street, Lagos, Nigeria</p>
+            <p>Email: info@lagoschamber.org</p>
+            <p>Phone: +234 800 000 0000</p>
+        </div>
+        <div class="footer-dev">
+            <p>© <span id="year"></span> Ukeje Frank Chika | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+</html>

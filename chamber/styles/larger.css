@@ -39,3 +39,49 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+@media only screen and (min-width: 641px) {
+    .discover-layout-matrix {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "lekki-conservation nike-art-gallery"
+            "tarkwa-bay         freedom-park"
+            "national-museum    eko-atlantic"
+            "kalakuta-museum    ikeja-city-mall";
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    
+    .discover-img {
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+    }
+
+    .discover-card:hover .discover-img {
+        transform: scale(1.06);
+        filter: brightness(1.05);
+    }
+
+    .discover-card {
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .discover-card:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        transform: translateY(-2px);
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    .discover-layout-matrix {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "lekki-conservation lekki-conservation nike-art-gallery    tarkwa-bay"
+            "freedom-park        national-museum    eko-atlantic        eko-atlantic"
+            "kalakuta-museum    ikeja-city-mall    ikeja-city-mall    ikeja-city-mall";
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

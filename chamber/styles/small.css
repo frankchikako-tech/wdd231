@@ -168,3 +168,95 @@ footer {
     padding: 2rem 1rem;
     margin-top: 2rem;
 }
+
+
+.visitor-alert-box {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 6px;
+    margin: 1rem auto;
+    max-width: 90%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.discover-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.discover-card h2 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.discover-figure {
+    margin: 0.5rem 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.discover-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-weight: 600;
+    color: #555;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.discover-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.learn-more-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background-color 0.2s;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+
+.discover-layout-matrix {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    grid-template-areas:
+        "lekki-conservation"
+        "nike-art-gallery"
+        "tarkwa-bay"
+        "freedom-park"
+        "national-museum"
+        "eko-atlantic"
+        "kalakuta-museum"
+        "ikeja-city-mall";
+}
