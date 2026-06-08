@@ -54,6 +54,7 @@ const discoverItems = [
         "name": "Ikeja City Mall",
         "address": "Obafemi Awolowo Way, Alausa, Ikeja, Lagos",
         "description": "A premier ultra-modern shopping destination in mainland Lagos, hosting global retail flagships, diverse dining options, and recreational cinema centers.",
+        "image": "images/ikeja-city-mall.webp"
     }
 ];
 
