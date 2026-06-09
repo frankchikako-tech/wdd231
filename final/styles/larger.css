@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    #menu-toggle { display: none; } /* Hide the hamburger menu button */
+
+    header { padding: 1rem 2rem; }
+
+    nav {
+        display: block !important;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    nav ul { display: flex; gap: 1.5rem; }
+
+    nav ul li a {
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background 0.2s;
+    }
+
+    /* Multi-Column Layout Grid for Directory Engine */
+    .properties-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+    }
+}

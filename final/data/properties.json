@@ -1,0 +1,23 @@
+[
+  {
+    "id": "prop_001",
+    "title": "Modern Lekki Duplex",
+    "location": "Lekki Phase 1, Lagos",
+    "price": "₦120,000,000",
+    "beds": 4,
+    "baths": 4.5,
+    "image": "https://picsum.photos/id/1020/400/300",
+    "description": "A stunning, fully automated contemporary duplex featuring premium finishing and open-concept architecture."
+  },
+  {
+    "id": "prop_002",
+    "title": "Urban Executive Penthouse",
+    "location": "Ikoyi, Lagos",
+    "price": "₦250,000,000",
+    "beds": 3,
+    "baths": 3,
+    "image": "https://picsum.photos/id/1021/400/300",
+    "description": "Panoramic city views with wrap-around balconies and state-of-the-art integrated kitchen facilities."
+  }
+  /* ⚠️ DUPLICATE & EDIT UNTIL YOU HAVE AT LEAST 15 UNIQUE ENTRIES HERE */
+]

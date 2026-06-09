@@ -1,0 +1,109 @@
+/* Color System engineered to clear DevTools AA Contrast checks */
+:root {
+    --bg-main: #ffffff;
+    --text-dark: #111827;      /* Clear high contrast rating */
+    --brand-teal: #0f766e;     /* Deep teal */
+    --muted-gray: #4b5563;
+    --accent-gold: #b45309;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Header & Hamburger Control */
+header {
+    background-color: var(--brand-teal);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h1 { margin: 0; font-size: 1.5rem; }
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none; /* Hidden by default on mobile screens */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--brand-teal);
+    z-index: 10;
+}
+
+nav.show { display: block; }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #14b8a6;
+}
+
+/* Wayfinding styling */
+nav ul li a.active {
+    background-color: #042f2e;
+    font-weight: bold;
+}
+
+/* Mobile Property Stack (Simple fallback stack) */
+.properties-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.property-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content { padding: 1.25rem; }
+
+/* Native Modal Dialog Core Styling */
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
