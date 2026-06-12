@@ -1,152 +1,152 @@
 [
-  {
-    "id": "prop_001",
-    "title": "Modern Lekki Duplex",
-    "location": "Lekki Phase 1, Lagos",
-    "price": "₦120,000,000",
-    "beds": 4,
-    "baths": 4.5,
-    "image": "https://picsum.photos/id/1020/400/300",
-    "description": "A stunning, fully automated contemporary duplex featuring premium finishing and open-concept architecture."
-  },
-  {
-    "id": "prop_002",
-    "title": "Urban Executive Penthouse",
-    "location": "Ikoyi, Lagos",
-    "price": "₦250,000,000",
-    "beds": 3,
-    "baths": 3,
-    "image": "https://picsum.photos/id/1021/400/300",
-    "description": "Panoramic city views with wrap-around balconies and state-of-the-art integrated kitchen facilities."
-  },
-  {
-    "id": "prop_003",
-    "title": "Lakeside Family Bungalow",
-    "location": "Lakowe, Ajah, Lagos",
-    "price": "₦75,000,000",
-    "beds": 3,
-    "baths": 2,
-    "image": "https://picsum.photos/id/1022/400/300",
-    "description": "A serene waterfront bungalow with lush garden, private jetty, and spacious entertainment patio."
-  },
-  {
-    "id": "prop_004",
-    "title": "Smart Terrace Townhouse",
-    "location": "Victoria Island, Lagos",
-    "price": "₦185,000,000",
-    "beds": 5,
-    "baths": 5,
-    "image": "https://picsum.photos/id/1039/400/300",
-    "description": "A sleek multi-level townhouse with smart home integration, rooftop terrace, and private parking bay."
-  },
-  {
-    "id": "prop_005",
-    "title": "Minimalist Studio Flat",
-    "location": "Yaba, Lagos",
-    "price": "₦18,500,000",
-    "beds": 1,
-    "baths": 1,
-    "image": "https://picsum.photos/id/1041/400/300",
-    "description": "A compact, beautifully designed studio ideal for young professionals, featuring high-speed fibre and co-working lounge access."
-  },
-  {
-    "id": "prop_006",
-    "title": "Gated Estate Villa",
-    "location": "Banana Island, Lagos",
-    "price": "₦950,000,000",
-    "beds": 6,
-    "baths": 7,
-    "image": "https://picsum.photos/id/1043/400/300",
-    "description": "An ultra-luxury island villa with Olympic-size pool, home cinema, staff quarters, and 24/7 concierge service."
-  },
-  {
-    "id": "prop_007",
-    "title": "Cozy 2-Bedroom Apartment",
-    "location": "Surulere, Lagos",
-    "price": "₦32,000,000",
-    "beds": 2,
-    "baths": 2,
-    "image": "https://picsum.photos/id/1044/400/300",
-    "description": "A well-maintained mid-rise apartment in a quiet neighbourhood, close to schools, hospitals, and markets."
-  },
-  {
-    "id": "prop_008",
-    "title": "Colonial Heritage Mansion",
-    "location": "GRA Ikeja, Lagos",
-    "price": "₦420,000,000",
-    "beds": 7,
-    "baths": 6,
-    "image": "https://picsum.photos/id/1047/400/300",
-    "description": "A grand colonial-style mansion with arched verandas, mature tropical gardens, and a detached guest chalet."
-  },
-  {
-    "id": "prop_009",
-    "title": "New-Build Semi-Detached",
-    "location": "Sangotedo, Lagos",
-    "price": "₦55,000,000",
-    "beds": 3,
-    "baths": 3,
-    "image": "https://picsum.photos/id/1048/400/300",
-    "description": "A freshly completed semi-detached home in a fast-growing estate corridor, with solar backup and prepaid meters."
-  },
-  {
-    "id": "prop_010",
-    "title": "Highrise Luxury Apartment",
-    "location": "Eko Atlantic City, Lagos",
-    "price": "₦380,000,000",
-    "beds": 4,
-    "baths": 4,
-    "image": "https://picsum.photos/id/1050/400/300",
-    "description": "Premium floor-to-ceiling glass apartment in Lagos' newest city district, with ocean frontage and concierge gym."
-  },
-  {
-    "id": "prop_011",
-    "title": "Garden Court Maisonette",
-    "location": "Magodo Phase 2, Lagos",
-    "price": "₦95,000,000",
-    "beds": 4,
-    "baths": 3.5,
-    "image": "https://picsum.photos/id/1053/400/300",
-    "description": "A charming split-level maisonette surrounded by flowering hedges, with a private courtyard and children's play area."
-  },
-  {
-    "id": "prop_012",
-    "title": "Industrial Loft Apartment",
-    "location": "Apapa, Lagos",
-    "price": "₦45,000,000",
-    "beds": 2,
-    "baths": 2,
-    "image": "https://picsum.photos/id/1057/400/300",
-    "description": "A converted warehouse loft with exposed brick, polished concrete floors, and dramatic double-height ceilings."
-  },
-  {
-    "id": "prop_013",
-    "title": "Eco-Friendly Detached Home",
-    "location": "Epe, Lagos",
-    "price": "₦62,000,000",
-    "beds": 3,
-    "baths": 2.5,
-    "image": "https://picsum.photos/id/1060/400/300",
-    "description": "A sustainably built home with rainwater harvesting, solar panels, composting garden, and natural ventilation design."
-  },
-  {
-    "id": "prop_014",
-    "title": "Serviced Corporate Apartment",
-    "location": "Oniru, Lagos",
-    "price": "₦140,000,000",
-    "beds": 2,
-    "baths": 2,
-    "image": "https://picsum.photos/id/1063/400/300",
-    "description": "A fully serviced executive apartment with housekeeping, gym, pool, and 24-hour power — perfect for short-let or corporate lease."
-  },
-  {
-    "id": "prop_015",
-    "title": "Beachfront Retreat Cottage",
-    "location": "Tarkwa Bay, Lagos",
-    "price": "₦88,000,000",
-    "beds": 3,
-    "baths": 2,
-    "image": "https://picsum.photos/id/1067/400/300",
-    "description": "A rare island-access beach cottage with direct sand frontage, open-deck dining, and a private boat dock."
-  }
+    {
+        "id": "prop_001",
+        "title": "Modern Lekki Duplex",
+        "location": "Lekki Phase 1, Lagos",
+        "price": "₦120,000,000",
+        "beds": 4,
+        "baths": 4.5,
+        "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop",
+        "description": "A stunning, fully automated contemporary duplex featuring premium finishing and open-concept architecture."
+    },
+    {
+        "id": "prop_002",
+        "title": "Urban Executive Penthouse",
+        "location": "Ikoyi, Lagos",
+        "price": "₦250,000,000",
+        "beds": 3,
+        "baths": 3,
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop",
+        "description": "Panoramic city views with wrap-around balconies and state-of-the-art integrated kitchen facilities."
+    },
+    {
+        "id": "prop_003",
+        "title": "Lakeside Family Bungalow",
+        "location": "Lakowe, Ajah, Lagos",
+        "price": "₦75,000,000",
+        "beds": 3,
+        "baths": 2,
+        "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&h=300&fit=crop",
+        "description": "A serene waterfront bungalow with lush garden, private jetty, and spacious entertainment patio."
+    },
+    {
+        "id": "prop_004",
+        "title": "Smart Terrace Townhouse",
+        "location": "Victoria Island, Lagos",
+        "price": "₦185,000,000",
+        "beds": 5,
+        "baths": 5,
+        "image": "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=400&h=300&fit=crop",
+        "description": "A sleek multi-level townhouse with smart home integration, rooftop terrace, and private parking bay."
+    },
+    {
+        "id": "prop_005",
+        "title": "Minimalist Studio Flat",
+        "location": "Yaba, Lagos",
+        "price": "₦18,500,000",
+        "beds": 1,
+        "baths": 1,
+        "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop",
+        "description": "A compact, beautifully designed studio ideal for young professionals, featuring high-speed fibre and co-working lounge access."
+    },
+    {
+        "id": "prop_006",
+        "title": "Gated Estate Villa",
+        "location": "Banana Island, Lagos",
+        "price": "₦950,000,000",
+        "beds": 6,
+        "baths": 7,
+        "image": "https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?w=400&h=300&fit=crop",
+        "description": "An ultra-luxury island villa with Olympic-size pool, home cinema, staff quarters, and 24/7 concierge service."
+    },
+    {
+        "id": "prop_007",
+        "title": "Cozy 2-Bedroom Apartment",
+        "location": "Surulere, Lagos",
+        "price": "₦32,000,000",
+        "beds": 2,
+        "baths": 2,
+        "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop",
+        "description": "A well-maintained mid-rise apartment in a quiet neighbourhood, close to schools, hospitals, and markets."
+    },
+    {
+        "id": "prop_008",
+        "title": "Colonial Heritage Mansion",
+        "location": "GRA Ikeja, Lagos",
+        "price": "₦420,000,000",
+        "beds": 7,
+        "baths": 6,
+        "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=400&h=300&fit=crop",
+        "description": "A grand colonial-style mansion with arched verandas, mature tropical gardens, and a detached guest chalet."
+    },
+    {
+        "id": "prop_009",
+        "title": "New-Build Semi-Detached",
+        "location": "Sangotedo, Lagos",
+        "price": "₦55,000,000",
+        "beds": 3,
+        "baths": 3,
+        "image": "https://images.weserv.nl/?url=www.superiteafrica.com/uploads/property_image/IMG_5609.JPG&w=400&h=300&fit=cover",
+        "description": "A freshly completed semi-detached home in a fast-growing estate corridor, with solar backup and prepaid meters."
+    },
+    {
+        "id": "prop_010",
+        "title": "Highrise Luxury Apartment",
+        "location": "Eko Atlantic City, Lagos",
+        "price": "₦380,000,000",
+        "beds": 4,
+        "baths": 4,
+        "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+        "description": "Premium floor-to-ceiling glass apartment in Lagos' newest city district, with ocean frontage and concierge gym."
+    },
+    {
+        "id": "prop_011",
+        "title": "Garden Court Maisonette",
+        "location": "Magodo Phase 2, Lagos",
+        "price": "₦95,000,000",
+        "beds": 4,
+        "baths": 3.5,
+        "image": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=400&h=300&fit=crop",
+        "description": "A charming split-level maisonette surrounded by flowering hedges, with a private courtyard and children's play area."
+    },
+    {
+        "id": "prop_012",
+        "title": "Industrial Loft Apartment",
+        "location": "Apapa, Lagos",
+        "price": "₦45,000,000",
+        "beds": 2,
+        "baths": 2,
+        "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=300&fit=crop",
+        "description": "A converted warehouse loft with exposed brick, polished concrete floors, and dramatic double-height ceilings."
+    },
+    {
+        "id": "prop_013",
+        "title": "Eco-Friendly Detached Home",
+        "location": "Epe, Lagos",
+        "price": "₦62,000,000",
+        "beds": 3,
+        "baths": 2.5,
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop",
+        "description": "A sustainably built home with rainwater harvesting, solar panels, composting garden, and natural ventilation design."
+    },
+    {
+        "id": "prop_014",
+        "title": "Serviced Corporate Apartment",
+        "location": "Oniru, Lagos",
+        "price": "₦140,000,000",
+        "beds": 2,
+        "baths": 2,
+        "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+        "description": "A fully serviced executive apartment with housekeeping, gym, pool, and 24-hour power — perfect for short-let or corporate lease."
+    },
+    {
+        "id": "prop_015",
+        "title": "Beachfront Retreat Cottage",
+        "location": "Tarkwa Bay, Lagos",
+        "price": "₦88,000,000",
+        "beds": 3,
+        "baths": 2,
+        "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=400&h=300&fit=crop",
+        "description": "A rare island-access beach cottage with direct sand frontage, open-deck dining, and a private boat dock."
+    }
 ]
