@@ -1,12 +1,44 @@
-<!-- Inside thank-you.html main tag -->
- <link rel="icon" href="../chamber/images/favicon.ico">
-<main>
-    <div class="confirmation-box">
-        ✅ <h2>Submission Successfully Logged</h2>
-        <div id="dynamic-form-data">
-            <p>Processing registration parameters...</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baytahome | Inquiry Received Successfully</title>
+    <meta name="description" content="Thank you for booking a real estate consultation slot with our development leasing desk.">
+    <meta name="author" content="Ukeje Frank Chika">
+    
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <h1>Baytahome</h1>
+        <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="contact.html">Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="confirmation-box">
+            <h2>✅ Submission Successfully Logged</h2>
+            <div id="dynamic-form-data">
+                <p>Processing registration parameters...</p>
+            </div>
+            <a href="properties.html" class="back-link">Return to Property Directory</a>
         </div>
-        <a href="properties.html" class="back-link">Return to Property Directory</a>
-    </div>
-</main>
-<script type="module" src="scripts/thankyou.js"></script>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Baytahome Project. Built for WDD 231 by Ukeje Frank Chika.</p>
+        <p><a href="https://youtu.be/your-video-id" target="_blank" class="video-link">🎬 Project Walkthrough Video</a></p>
+    </footer>
+
+    <script type="module" src="scripts/thankyou.js"></script>
+</body>
+</html>

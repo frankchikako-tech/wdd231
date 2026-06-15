@@ -1,26 +1,57 @@
-<!-- Inside contact.html main tag -->
- <link rel="icon" href="../chamber/images/favicon.ico">
-<main>
-    <div class="form-container">
-        <h2>Schedule a Property Consultation</h2>
-        <form action="thank-you.html" method="get" id="consultation-form">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baytahome | Book a Consultation Slot</title>
+    <meta name="description" content="Connect directly with premium developers and register your interest in real estate assets without extra agent fees.">
+    <meta name="author" content="Ukeje Frank Chika">
+    
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <h1>Baytahome</h1>
+        <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="contact.html" class="active">Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <label for="emailAddress">Email Address</label>
-            <input type="email" id="emailAddress" name="emailAddress" required placeholder="john@example.com">
+    <main>
+        <div class="form-container">
+            <h2>Schedule a Property Consultation</h2>
+            <form action="thank-you.html" method="get" id="consultation-form">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
 
-            <label for="propertyType">Interested Property Category</label>
-            <select id="propertyType" name="propertyType">
-                <option value="Modern Duplex">Modern Duplex</option>
-                <option value="Luxury Penthouse">Luxury Penthouse</option>
-                <option value="Commercial Suite">Commercial Suite</option>
-            </select>
+                <label for="emailAddress">Email Address</label>
+                <input type="email" id="emailAddress" name="emailAddress" required placeholder="john@example.com">
 
-            <label for="notes">Special Requests/Notes</label>
-            <textarea id="notes" name="notes" rows="4" placeholder="Mention preferred viewing times..."></textarea>
+                <label for="propertyType">Interested Property Category</label>
+                <select id="propertyType" name="propertyType">
+                    <option value="Modern Duplex">Modern Duplex</option>
+                    <option value="Luxury Penthouse">Luxury Penthouse</option>
+                    <option value="Commercial Suite">Commercial Suite</option>
+                </select>
 
-            <button type="submit" id="submit-btn">Book Consultation Slot</button>
-        </form>
-    </div>
-</main>
+                <label for="notes">Special Requests/Notes</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Mention preferred viewing times..."></textarea>
+
+                <button type="submit" id="submit-btn">Book Consultation Slot</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Baytahome Project. Built for WDD 231 by Ukeje Frank Chika.</p>
+        <p><a href="https://youtu.be/your-video-id" target="_blank" class="video-link">🎬 Project Walkthrough Video</a></p>
+    </footer>
+</body>
+</html>

@@ -1,24 +1,53 @@
-<!-- Inside properties.html main tag -->
- <link rel="icon" href="../chamber/images/favicon.ico">
-<main>
-    <h2>Premium Real Estate Portfolio</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baytahome | Premium Real Estate Portfolio</title>
+    <meta name="description" content="Browse through our verified portfolio of luxury duplexes, penthouses, and commercial suites in premium locations.">
+    <meta name="author" content="Ukeje Frank Chika">
     
-    <!-- Client-Side Storage Interactive Control -->
-    <div class="preference-bar">
-        <button id="toggle-view-pref">Toggle Dark Mode Layout</button>
-    </div>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <h1>Baytahome</h1>
+        <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html" class="active">Properties</a></li>
+                <li><a href="contact.html">Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- The Target Container for JS Insertion -->
-    <div class="properties-container" id="properties-display-grid"></div>
-
-    <!-- The Required Native Accessible Modal Dialog Structure -->
-    <dialog id="property-detail-modal">
-        <div class="modal-wrapper">
-            <h2 id="modal-title">Property Title</h2>
-            <p id="modal-specs" class="modal-highlight"></p>
-            <p id="modal-desc">Detailed listing text goes here.</p>
-            <button id="close-modal-btn">Close Details</button>
+    <main>
+        <h2>Premium Real Estate Portfolio</h2>
+        
+        <div class="preference-bar">
+            <button id="toggle-view-pref">Toggle Dark Mode Layout</button>
         </div>
-    </dialog>
-</main>
-<script type="module" src="scripts/properties.js"></script>
+
+        <div class="properties-container" id="properties-display-grid"></div>
+
+        <dialog id="property-detail-modal">
+            <div class="modal-wrapper">
+                <h2 id="modal-title">Property Title</h2>
+                <p id="modal-specs" class="modal-highlight"></p>
+                <p id="modal-desc">Detailed listing text goes here.</p>
+                <button id="close-modal-btn">Close Details</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Baytahome Project. Built for WDD 231 by Ukeje Frank Chika.</p>
+        <p><a href="https://youtu.be/your-video-id" target="_blank" class="video-link">🎬 Project Walkthrough Video</a></p>
+    </footer>
+
+    <script type="module" src="scripts/properties.js"></script>
+</body>
+</html>

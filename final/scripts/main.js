@@ -15,8 +15,12 @@ export function formatPrice(price) {
  * @param {string} str
  * @returns {string}
  */
-export function escapeInput(str) {
-    return String(str).replace(/</g, "&lt;").replace(/>/g, "&gt;");
+export function formatPrice(price) {
+    if (!price) return "₦0";
+    if (typeof price === "string" && price.includes("₦")) return price;
+    
+    const num = typeof price === "string" ? parseFloat(price.replace(/[^0-9.-]+/g, "")) : price;
+    return new Intl.NumberFormat('en-NG', { style: 'currency', currency: 'NGN', maximumFractionDigits: 0 }).format(num);
 }
 
 // ─── Global Nav Controller ────────────────────────────────────────────────────
