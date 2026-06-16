@@ -1,7 +1,7 @@
 // ─── ES Module Imports ────────────────────────────────────────────────────────
 import { formatPrice, escapeInput } from './main.js';
 
-const DATA_URL = "data/properties.json";
+const DATA_URL = "./data/properties.json";
 
 // ─── 1. Async Fetch with Try/Catch ────────────────────────────────────────────
 async function loadPropertyDashboard() {
@@ -26,7 +26,6 @@ function renderGridDisplay(items, gridContainer) {
     gridContainer.innerHTML = "";
 
     items.forEach(item => {
-        // Uses imported formatPrice from main.js (ES Module demo)
         const displayPrice = formatPrice(item.price);
 
         const cardMarkup = `
